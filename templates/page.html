@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block content %}        
+<header>
+  <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> </h1> 
+  <h1><a href="{{ SITEURL }}/{{ page.url }}" id="page-title">{{ page.title }}</a></h1>
+  {% if not HIDE_DATE %}<time datetime="{{ page.date.isoformat() }}">{{ page.locale_date }}</time>{% endif %}
+</header>
+<article>    
+    {{ page.content }}
+</article>
+{% endblock %}
