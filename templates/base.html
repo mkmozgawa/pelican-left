@@ -26,7 +26,7 @@
 <body>
   {% include 'github.html' %}
 
-  <section class="sidebar">
+  <aside class="sidebar">
     <a href="/"><img src="/static/images/avatar.png" height="75" width="75" class="avatar" /></a>
 
     <section class="name">
@@ -57,9 +57,15 @@
       </section>
     {% endif %}
 
-  </section>
+  </aside>
 
   <section class="column-right">
+    {% block header %}
+      <header>
+        <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> </h1> 
+      </header>
+    {% endblock header %}
+
     {% block content %} {% endblock %}
   </section>
 

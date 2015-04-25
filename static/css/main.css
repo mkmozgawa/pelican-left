@@ -102,17 +102,20 @@ pre {
   padding: 10px; }
 
 
-header {
-  padding-bottom: 20px; }
-
-header a {
+.page-title a {
   border-bottom: none; }
 
-header a#page-title {
-  font-weight: bold; }
+.page-title  {
+  font-weight: bold;
+  border-bottom: none;
+  margin-top: 0.5em; }
+
 
 header h1 strong {
     font-size: 0.5em; }
+
+header a {
+  border-bottom: none; }
 
 .sidebar {
     position: fixed;
@@ -179,14 +182,14 @@ header h1 strong {
     padding: 0;
     list-style: none; }
 
-
-#article-list {
-  margin-top: 100px;}
-
-#article-list ol li {
+.simple-list li {
   line-height: 1.2em;
   list-style-type: none;
   padding-bottom: 10px; }
+
+
+#article-list {
+  margin-top: 3em;}
 
 #article-list ol li time {
   font-size: 0.7em; }
