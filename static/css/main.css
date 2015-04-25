@@ -139,7 +139,7 @@ header a {
 
 .sidebar .name {
     text-transform: uppercase;
-    margin: 10px 0 20px 0; }
+    margin: .2em 0 .2em 0; }
 
 .sidebar .name #author {
     padding-left: 1px;
