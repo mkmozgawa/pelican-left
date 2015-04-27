@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }} | {{ super() }}{% endblock %}
+{% block extra_head %}
+  <meta name="description" content="{{ article.summary|striptags }}">
+  <meta name="keywords" content="{{ article.tags|join(', ') }}">
+  <meta name="author" content="{{ article.author }}">
+{% endblock %}
 {% block content %}        
 <article>
   <h1 class="page-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
