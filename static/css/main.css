@@ -46,7 +46,8 @@ img {
 code {
     background: #B9E1EE;
     font-family: inherit;
-    padding: 0px 5px;
+    padding: 0px 2px;
+    color: #136E96;
 }
 
 blockquote {
