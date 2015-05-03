@@ -108,8 +108,11 @@ pre {
   margin-top: 0.5em; }
 
 
-header h1 strong {
-    font-size: 0.5em; }
+header {
+  font-size: 1.5em; }
+
+header span strong {
+  font-size: 0.5em; }
 
 header a {
   border-bottom: none; }
