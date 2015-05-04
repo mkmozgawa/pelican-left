@@ -4,10 +4,10 @@
   <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="/theme/css/{{ CSS_FILE }}" type="text/css" />
-  <link rel="stylesheet" href="/theme/css/fontawesome.min.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fontawesome.min.css" type="text/css" media="screen, projection" />
   <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
-  <link href="{{ SITEURL }}/static/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="{{ SITEURL }}/images/favicon.ico" rel="icon" type="image/x-icon" />
   {% if FEED_RSS %}
   <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
   {% endif %}
@@ -27,7 +27,7 @@
   {% include 'github.html' %}
 
   <aside class="sidebar">
-    <a href="/"><img src="/static/images/avatar.png" height="75" width="75" class="avatar" /></a>
+    <a href="/"><img src="{{ SITEURL }}/images/avatar.png" height="75" width="75" class="avatar" /></a>
 
     <section class="name">
       <a href="/"><span id="author">{{ AUTHOR }}</span></a>
