@@ -129,21 +129,11 @@ header a {
     text-decoration: none; 
     border: none; }
 
-.sidebar img {
-    padding: 0 3px;
-    border: 0; }
-
-.sidebar .avatar {
-    padding: 0;
-    margin-left: 2px;
+.rounded-img {
     border-radius: 5px; }
 
-.sidebar .name {
-    text-align: center;
-    text-transform: uppercase; }
-
-.sidebar .name #author {
-    padding-left: 1px;
+.sidebar .name a {
+    text-transform: uppercase;
     font-size: 0.75em;
     color: black; }
 
@@ -153,7 +143,7 @@ header a {
 .sidebar .meta a:hover {
     color: #227ce8; }
 
-.sidebar .meta {
+.centered-block {
     align-content: center;
     justify-content: center;
     display: flex; }

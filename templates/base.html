@@ -27,14 +27,16 @@
   {% include 'github.html' %}
 
   <aside class="sidebar">
-    <a href="/"><img src="{{ SITEURL }}/images/avatar.png" height="75" width="75" class="avatar" /></a>
+    <section class="avatar centered-block">
+      <a href="/"><img class="rounded-img" src="{{ SITEURL }}/images/avatar.png" height="75" width="75" /></a>
+    </section>
 
-    <section class="name">
-      <a href="/"><span id="author">{{ AUTHOR }}</span></a>
+    <section class="name centered-block">
+      <a href="/">{{ AUTHOR }}</a>
     </section>
 
     {% if SOCIAL %}
-      <section class="meta">
+      <section class="meta centered-block">
         {% for link in SOCIAL %}
           <a href="{{ link[1] }}" target="_blank"><i class="icon icon-{{ link[0].lower() }}"></i></a>
         {% endfor %}
