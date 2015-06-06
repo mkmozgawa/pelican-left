@@ -99,6 +99,7 @@ pre {
 
 
 .page-title {
+  font-size: 1.5em;
   font-style: italic;
   margin-bottom: 0.5em;
   color: #227ce8; }
@@ -113,13 +114,6 @@ pre {
   margin-top: 0;
   font-weight: bold;
 }
-
-
-header {
-  font-size: 1.5em; }
-
-header a {
-  border-bottom: none; }
 
 .sidebar {
     position: fixed;
@@ -186,9 +180,6 @@ header a {
 
 #article-list ol {
   margin-top: 0; }
-
-#article-list ol li time {
-  font-size: 0.7em; }
 
 .column-right {
   max-width: 650px;
