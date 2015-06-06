@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block header %}
+<header class="page-title">
+  {{ SITENAME }}</i> {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</a>
+</header>
+{% endblock header %}
+
 {% block content %}        
   {% if articles %}
     {% for article in articles %}
@@ -7,7 +13,7 @@
       {% if loop.first %}
 
         <article>
-          <h1 class="page-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+          <h1 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
           {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
           {{ article.content }}{% include 'comments.html' %}
         </article>

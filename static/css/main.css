@@ -97,21 +97,25 @@ pre {
   padding: 7px; }
 
 
-.page-title a {
-  border-bottom: none; }
+.page-title {
+  font-style: italic;
+  margin-bottom: 0.5em;
+  color: #227ce8; }
 
-.page-title  {
+.page-title small {
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+}
+
+.article-title {
+  margin-top: 0;
   font-weight: bold;
-  border-bottom: none;
-  margin-top: 0.5em; }
+}
 
 
 header {
   font-size: 1.5em; }
-
-header span strong {
-  font-size: 0.5em;
-  color: #555555; }
 
 header a {
   border-bottom: none; }

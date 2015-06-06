@@ -63,12 +63,7 @@
   </aside>
 
   <section class="column-right">
-    {% block header %}
-      <header>
-        <span><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> </span>
-      </header>
-    {% endblock header %}
-
+    {% block header %}{% endblock header %}
     {% block content %} {% endblock %}
   </section>
 
