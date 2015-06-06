@@ -7,10 +7,8 @@
 {% endblock %}
 {% block content %}        
 <article>
-  <h1 class="page-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-  <section>
-    {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
-    {{ article.content }}
-  </section>
+  <h1 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+  {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
+  {{ article.content }}
 </article>
 {% endblock %}
