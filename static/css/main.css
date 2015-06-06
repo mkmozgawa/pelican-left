@@ -5,6 +5,7 @@ body {
   color: #333;
   font: 18px Hoefler Text, bodyfont, serif;
   line-height: 30px;
+  margin: 0.8em 1em;
   max-width: 40em; }
 
 
@@ -122,8 +123,6 @@ header a {
 
 .sidebar {
     position: fixed;
-    left: 15px;
-    top: 15px;
     font-family: Helvetica, sans-serif; }
 
 .sidebar a {
