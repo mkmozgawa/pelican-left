@@ -1,11 +1,12 @@
 {% extends "index.html" %}
-{% block header %}{% endblock %}
 {% block content %}
-  <h1 class="page-title"><a href="{{ SITEURL }}/tags.html">Tags</a></h1>
+<section class="column-right">
+  <h1 class="article-title"><a href="{{ SITEURL }}/tags.html">Tags</a></h1>
   <ul class="simple-list">
   {% for tag, articles in tags %}
     <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
   {% endfor %}
   </ul>
+</section>
 {% endblock %}
 
