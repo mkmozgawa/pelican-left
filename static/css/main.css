@@ -71,7 +71,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  border-bottom: #227ce8 1px solid; }
+  text-decoration: underline; }
 
 
 ul, ol {
