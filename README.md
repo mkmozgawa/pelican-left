@@ -27,6 +27,9 @@ with the following settings in your `pelicanconf.py` file.
 | LINKS            | A list of tuples (Title, URL) for links to appear at the left side column.                                              |
 | SOCIAL           | A list of tuples (Title, URL) to appear as `font-awesome` icons in the. "social" section, below the avatar/author name. |
 
+Next, place your custom `avatar.png` and `favicon.ico` files in the `images/` folder of
+your pelican blog.
+
 
 ## Licensing
 
