@@ -1,12 +1,12 @@
 # Pelican Left
 
-Left is a clean, whitespace-happy layout for [Pelican](http://getpelican.com).
+Left is a clean, whitespace-happy theme for [Pelican](http://getpelican.com).
 Although the original theme was extracted from [scottchacon.com](http://scottchacon.com/)
 and targeted to [Jekyll](https://github.com/mojombo/jekyll), I've tried to adapt it so
 that it can be used with Pelican and modernized to use HTML5 semantic elements.
 
 
-[![Pelican Left](http://i.imgur.com/NT0iQ70.png)](http://hernantz.github.io)
+[![Pelican Left](http://i.imgur.com/NT0iQ70.png)](http://hernantz.github.io "Live Demo")
 
 
 ## Customization
