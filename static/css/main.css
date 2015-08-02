@@ -134,6 +134,7 @@ pre {
     color: black; }
 
 .sidebar .meta a:hover {
+    text-decoration: none;
     color: #227ce8; }
 
 .centered-block {
