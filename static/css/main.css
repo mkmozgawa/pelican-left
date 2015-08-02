@@ -191,18 +191,4 @@ pre {
 
   
 footer {
-  background: #fff;
-  color: #666;
-  font-family: helvetica, sans-serif;
-  font-size: 13px;
-  letter-spacing: 4px; }
-
-footer a {
-  border-bottom: none;
-  color: #c0c0c0; }
-
-footer li {
-  display: inline; }
-
-footer p {
-  text-align: right; }
+  color: #333333; }
