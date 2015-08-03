@@ -2,7 +2,7 @@
 
 Left is a clean, whitespace-happy theme for [Pelican](http://getpelican.com).
 Although the original theme was extracted from [scottchacon.com](http://scottchacon.com/)
-and targeted to [Jekyll](https://github.com/mojombo/jekyll), I've tried to adapt it so
+and targeted to [Jekyll](https://github.com/jekyll/jekyll), I've tried to adapt it so
 that it can be used with Pelican and modernized to use HTML5 semantic elements.
 
 
@@ -16,7 +16,7 @@ with the following settings in your `pelicanconf.py` file.
 
 | Setting name     | What does it do?                                                                                                        |
 |------------------|-------------------------------------------------------------------------------------------------------------------------|
-| SITENAME         | The title of the blog that appears only in the index page                                                               |
+| SITENAME         | The title of the blog that appears only in the index page.                                                               |
 | SITESUBTITLE     | A subtitle to appear next to the `SITENAME`.                                                                            |
 | DISQUS_SITENAME  | Pelican can handle Disqus comments. Specify the Disqus sitename identifier here.                                        |
 | GOOGLE_ANALYTICS | Set to 'UA-XXXX-YYYY' to activate Google Analytics.                                                                     |
