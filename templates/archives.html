@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content" class="column-right">
-  <h1 class="article-title">Archives for {{ SITENAME }}</h1>
-
-  <dl>
-  {% for article in dates %}
-      <dt>{{ article.locale_date }}</dt>
-      <dd><a href='{{ article.url }}'>{{ article.title }}</a></dd>
-  {% endfor %}
-  </dl>
+  <h1 class="article-title">Archives</h1>
+  {% if dates %}
+    <ol class="simple-list">
+      {% for article in dates %}
+        <li>
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+          {% if not HIDE_DATE %}
+          <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    No posts found.
+  {% endif %}
 </section>
 {% endblock %}
