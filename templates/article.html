@@ -10,8 +10,9 @@
   <h1 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   <span class="light">
     Published
-    {% if not HIDE_DATE %}on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>,{% endif %}
-    under {{ article.category }}, tagged with {{ article.tags|join(', ') }}
+    {% if not HIDE_DATE %}on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, {% endif %}
+    under <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% if article.tags %},
+    tagged with {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{%if not loop.last %}, {% endif%}{% endfor %}{% endif %}.
   </span>
   {{ article.content }}
 </article>
