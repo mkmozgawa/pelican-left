@@ -55,17 +55,10 @@
     <section class="column-right"> </section>
   {% endblock %}
 
-  <footer class="column-right">
-      <nav>
-          <ul>
-          {% if categories|length > 1 %}
-              <li>:: <a href="{{ SITEURL }}/categories.html">Categories</a></li>
-          {% endif %}
-          {% if tags|length > 1 %}
-              <li>:: <a href="{{ SITEURL }}/tags.html">Tags</a></li>
-          {% endif %}
-          </ul>
-      </nav>
+  <footer class="column-right light">
+    <hr/>
+    <nav><a href="{{ SITEURL }}">Home</a> - <a href="{{ SITEURL }}/archives.html">Archives</a> - <a href="{{ SITEURL }}/categories.html">Categories</a> - <a href="{{ SITEURL }}/tags.html">Tags</a> | {{SITENAME}} (© 2015)</nav>
+    <p></p>
   </footer>
 
   {% include 'analytics.html' %}
