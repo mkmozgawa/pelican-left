@@ -6,42 +6,21 @@
       {{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</a>
     </header>
     {% if articles %}
-      {% for article in articles %}
-        {# First item #}
-        {% if loop.first %}
-
-          <article>
-            <h1 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-            <span class="light">
-              Published
-              {% if not HIDE_DATE %}on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, {% endif %}
-              under <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% if article.tags %},
-              tagged with {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{%if not loop.last %}, {% endif%}{% endfor %}{% endif %}.
-            </span>
-            {{ article.content }}{% include 'comments.html' %}
-          </article>
-          {% if loop.length > 1 %}
-              <br/>
-              <section class="article-list">
-              <h3>{% block article_list_title %}More posts{% endblock %}</h3>
-                <ol class="simple-list">
-          {% endif %}
-        {# other items #}
-        {% else %}
-        <li>
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
-          {% if not HIDE_DATE %}
-          <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
-          {% endif %}
-        </li>
-        {% endif %}
-      {% endfor %}
-      {% if loop.length > 1 %}
-          </ol>
-          </section><!-- #article-list -->
+      <section class="article-list">
+        <ol class="simple-list">
+        {% for article in articles %}
+          <li>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+            {% if not HIDE_DATE %}
+            <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
+            {% endif %}
+            {{ article.summary }}
+          </li>
+        {% endfor %}
+        </ol>
+      </section><!-- /article-list -->
+      {% else %}
+          No posts found.
       {% endif %}
-    {% else %}
-        No posts found.
-    {% endif %}
   </section>
 {% endblock content %}
