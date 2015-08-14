@@ -5,6 +5,9 @@ Although the original theme was extracted from [scottchacon.com](http://scottcha
 and targeted to [Jekyll](https://github.com/jekyll/jekyll), I've tried to adapt it so
 that it can be used with Pelican and modernized to use HTML5 semantic elements.
 
+A lot of space was intentionally left blank with the sole purpose of filling it with
+annoying ads.
+
 
 [![Pelican Left](http://i.imgur.com/NT0iQ70.png)](http://hernantz.github.io "Live Demo")
 
