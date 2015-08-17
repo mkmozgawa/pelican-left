@@ -10,11 +10,13 @@
         <ol class="simple-list">
         {% for article in articles %}
           <li>
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
-            {% if not HIDE_DATE %}
-            <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
-            {% endif %}
-            {{ article.summary }}
+            <article>
+              <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+              {% if not HIDE_DATE %}
+              <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
+              {% endif %}
+              {{ article.summary }}
+            </article>
           </li>
         {% endfor %}
         </ol>
