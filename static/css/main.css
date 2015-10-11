@@ -31,7 +31,8 @@ h4 {
 
 .light {
   color: #b0b0b0;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  line-height: 1.4em; }
 
 img {
   max-width: 100%;
