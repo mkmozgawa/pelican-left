@@ -64,6 +64,10 @@ a {
 a:hover {
   text-decoration: underline; }
 
+a:visited {
+  color: #60B;
+}
+
 ul, ol {
   padding: 0; }
 
