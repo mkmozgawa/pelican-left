@@ -26,17 +26,13 @@
       <a href="/">{{ AUTHOR }}</a>
     </div>
 
-    {% if SOCIAL %}
-      <section class="meta centered-block">
-        {% for link in SOCIAL %}
-          <a href="{{ link[1] }}" target="_blank"><i class="icon icon-{{ link[0].lower() }}"></i></a>
-        {% endfor %}
-      </section>
-    {% endif %}
 
-    {% if PAGES or LINKS or MENUITEMS %}
+    {% if SOCIAL or PAGES or LINKS or MENUITEMS %}
       <section class="sections">
         <ul>
+          {% for link in SOCIAL %}
+            <li><a href="{{ link[1] }}">{{ link[0] }}</i></a></li>
+          {% endfor %}
           {% for item in MENUITEMS %}
             <li><a href="{{ SITEURL }}/{{ item[1] }}">{{ item[0] }}</a></li>
           {% endfor %}
