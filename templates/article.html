@@ -8,12 +8,14 @@
 {% block content %}        
 <article class="column-right">
   <h1 class="article-title">{{ article.title }}</h1>
-  <p class="light">
-    Published
-    {% if not HIDE_DATE %}on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, {% endif %}
-    under <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% if article.tags %},
-    tagged with {% for tag in article.tags %}{% if loop.last and not loop.first %} and {% elif not loop.first  %}, {% endif %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{% endfor %}{% endif %}.
-  </p>
+  <summary>
+    <p class="light">
+      Published
+      {% if not HIDE_DATE %}on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>, {% endif %}
+      under <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% if article.tags %},
+      tagged with {% for tag in article.tags %}{% if loop.last and not loop.first %} and {% elif not loop.first  %}, {% endif %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{% endfor %}{% endif %}.
+    </p>
+  </summary>
   {{ article.content }}
 </article>
 {% endblock %}

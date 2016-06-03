@@ -2,8 +2,8 @@
 
 {% block content %}        
   <section class="column-right">
-    <header class="page-title">
-      {{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</a>
+    <header>
+      <h1 class="page-title">{{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</h1>
     </header>
     {% if articles %}
       <section class="article-list">
@@ -15,7 +15,7 @@
               {% if not HIDE_DATE %}
               <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
               {% endif %}
-              {{ article.summary }}
+              <summary>{{ article.summary }}</summary>
             </article>
           </li>
         {% endfor %}
