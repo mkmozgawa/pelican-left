@@ -84,21 +84,18 @@ pre {
   padding: 7px; }
 
 .page-title {
-  font-size: 1.5em;
-  font-style: italic;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 0;
   color: goldenrod; }
 
 .page-title small {
-  font-style: normal;
+  font-style: italic;
   color: #444;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .article-title {
   margin-top: 0;
-  color: goldenrod;
-}
+  color: goldenrod; }
 
 .sidebar {
     position: fixed;
