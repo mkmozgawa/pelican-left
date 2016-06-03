@@ -39,11 +39,10 @@ img {
   border: none; }
 
 code {
-    background: lightgoldenrodyellow;
-    font-family: inherit;
-    padding: 0px 2px;
-    color: darkgoldenrod;
-}
+  background: #E8E8E8;
+  font-family: inherit;
+  padding: 0px 2px;
+  border-radius: 3px; }
 
 blockquote {
   border-left: 0.3em solid #b0b0b0;
