@@ -83,6 +83,11 @@ pre {
   overflow: auto;
   padding: 7px; }
 
+dd {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
 .page-title {
   margin-bottom: 1em;
   margin-top: 0;
@@ -150,11 +155,8 @@ pre {
   padding-bottom: 10px; }
 
 .article-list p {
-  margin-top: 0.3em;
+  margin: 0;
 }
-
-.article-list ol {
-  margin-top: 0; }
 
 .column-right {
   max-width: 650px;

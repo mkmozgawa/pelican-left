@@ -7,19 +7,17 @@
     </header>
     {% if articles %}
       <section class="article-list">
-        <ol class="simple-list">
+        <dl>
         {% for article in articles %}
-          <li>
-            <article>
+          <dt>
               <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
               {% if not HIDE_DATE %}
               <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
               {% endif %}
-              <summary>{{ article.summary }}</summary>
-            </article>
-          </li>
+          </dt>
+          <dd>{{ article.summary }}</dd>
         {% endfor %}
-        </ol>
+        </dl>
       </section><!-- /article-list -->
       {% else %}
           No posts found.
