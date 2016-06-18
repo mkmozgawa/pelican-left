@@ -86,20 +86,17 @@ dd {
   margin: 0;
   margin-bottom: 1.5em; }
 
-.page-title {
-  margin-bottom: 1em;
+/* site header */
+.main-title {
   margin-top: 0;
   color: goldenrod; }
 
-.page-title small {
+.main-title small {
   font-style: italic;
   color: #444;
   font-size: 14px; }
 
-.article-title {
-  margin-top: 0;
-  color: goldenrod; }
-
+/* aside */
 .sidebar {
   position: fixed;
   font-family: Helvetica, sans-serif; }

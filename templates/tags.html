@@ -2,7 +2,7 @@
 {% block title %}Tags - {{ SITENAME }}{% endblock %}
 {% block content %}
 <section class="column-right">
-  <h1 class="article-title">Tags</h1>
+  <h1 class="main-title">Tags</h1>
   {% for tag, articles in tags %}
     <section class="article-list">
       <h3><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></h3>
