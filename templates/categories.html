@@ -4,7 +4,7 @@
   <h1 class="article-title">Categories</h1>
   {% for category, articles in categories %}
     <section class="article-list">
-      <h3>Under <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></h3>
+      <h3><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></h3>
       <ol class="simple-list">
         {% for article in articles %}
           <li>

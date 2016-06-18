@@ -3,7 +3,9 @@
 {% block content %}        
   <section class="column-right">
     <header>
+      {% block header %}
       <h1 class="page-title">{{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</h1>
+      {% endblock %}
     </header>
     {% if articles %}
       <section class="article-list">
