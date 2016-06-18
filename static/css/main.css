@@ -104,51 +104,51 @@ dd {
   color: goldenrod; }
 
 .sidebar {
-    position: fixed;
-    font-family: Helvetica, sans-serif; }
+  position: fixed;
+  font-family: Helvetica, sans-serif; }
 
 .sidebar a {
-    border: none; }
+  border: none; }
 
 .rounded-img {
-    border-radius: 5px; }
+  border-radius: 5px; }
 
 .sidebar .meta a {
-    color: black; }
+  color: black; }
 
 .sidebar .meta a:hover {
-    text-decoration: none;
-    color: #227ce8; }
+  text-decoration: none;
+  color: #227ce8; }
 
 .centered-block {
-    align-content: center;
-    justify-content: center;
-    display: flex; }
+  align-content: center;
+  justify-content: center;
+  display: flex; }
 
 .sidebar .meta .icon {
-    margin: 5px; }
+  margin: 5px; }
 
 .sidebar nav {
-    margin: 15px 0 0 0; }
+  margin: 15px 0 0 0; }
 
 .sidebar nav a {
-    padding: 3px 0;
-    color: black;
-    font-weight: bold;
-    font-size: 12px;
-    display: block; }
+  padding: 3px 0;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  display: block; }
 
 .sidebar nav a:hover {
-    color: #227ce8; }
+  color: #227ce8; }
 
 .sidebar nav ul {
-    margin: 0;
-    padding: 0; }
+  margin: 0;
+  padding: 0; }
 
 .sidebar nav li {
-    line-height: 18px;
-    padding: 0;
-    list-style: none; }
+  line-height: 18px;
+  padding: 0;
+  list-style: none; }
 
 .simple-list li {
   line-height: 1.2em;
