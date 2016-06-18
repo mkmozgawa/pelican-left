@@ -5,16 +5,16 @@
   {% for category, articles in categories %}
     <section class="article-list">
       <h3><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></h3>
-      <ol class="simple-list">
+      <dl>
         {% for article in articles %}
-          <li>
+          <dt>
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
             {% if not HIDE_DATE %}
             <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
             {% endif %}
-          </li>
+          </dt>
         {% endfor %}
-      </ol>
+      </dl>
     </section>
   {% endfor %}
 </section>
