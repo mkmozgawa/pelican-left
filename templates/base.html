@@ -4,11 +4,11 @@
   <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/github.css" type="text/css" />
-  <link href="{{ SITEURL }}/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/theme/css/{{ CSS_FILE }}" type="text/css" />
+  <link rel="stylesheet" href="/theme/css/github.css" type="text/css" />
+  <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
   {% if FEED_RSS %}
-  <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+  <link href="/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
   {% endif %}
   {% block extra_head %}{% endblock extra_head%}
 </head>
@@ -16,7 +16,7 @@
 <body>
 
   <aside class="sidebar">
-    <a href="/"><img class="rounded-img" src="{{ SITEURL }}/images/avatar.png" height="75" width="75" /></a>
+    <a href="/"><img class="rounded-img" src="/images/avatar.png" height="75" width="75" /></a>
 
     {% if SOCIAL or PAGES or LINKS or MENUITEMS %}
       <nav>
@@ -25,10 +25,10 @@
             <li><a href="{{ link[1] }}">{{ link[0] }}</i></a></li>
           {% endfor %}
           {% for item in MENUITEMS %}
-            <li><a href="{{ SITEURL }}/{{ item[1] }}">{{ item[0] }}</a></li>
+            <li><a href="/{{ item[1] }}">{{ item[0] }}</a></li>
           {% endfor %}
           {% for page in PAGES %}
-            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            <li><a href="/{{ page.url }}">{{ page.title }}</a></li>
           {% endfor %}
           {% for link in LINKS %}
             <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
@@ -45,7 +45,7 @@
 
   <footer class="column-right light">
     <hr/>
-    <nav><a href="{{ SITEURL }}">Home</a> - <a href="{{ SITEURL }}/archives.html">Archives</a> - <a href="{{ SITEURL }}/categories.html">Categories</a> - <a href="{{ SITEURL }}/tags.html">Tags</a> - <a href="{{ SITEURL }}/rss.xml">RSS</a> | {{SITENAME}} (© 2016)</nav>
+    <nav><a href="/">Home</a> - <a href="/archives.html">Archives</a> - <a href="/categories.html">Categories</a> - <a href="/tags.html">Tags</a> - <a href="/rss.xml">RSS</a> | {{SITENAME}} (© 2016)</nav>
     <p></p>
   </footer>
 

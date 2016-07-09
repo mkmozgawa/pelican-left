@@ -5,11 +5,11 @@
   <h1 class="main-title">Tags</h1>
   {% for tag, articles in tags %}
     <section class="article-list">
-      <h3><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></h3>
+      <h3><a href="/{{ tag.url }}">{{ tag }}</a></h3>
       <dl>
         {% for article in articles %}
           <dt>
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+            <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
             {% if not HIDE_DATE %}
             <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
             {% endif %}
