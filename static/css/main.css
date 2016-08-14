@@ -123,13 +123,13 @@ dd {
   margin: 0; }
 
 .column-right {
-  max-width: 650px;
   margin-left: 120px;
   margin-right: 20px;
   margin-bottom: 50px; }
 
 /* code snippets */
 .highlight {
+  font-size: 0.9em;
   border: 1px solid lightblue; }
 
 /* headers permalink */
