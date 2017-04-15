@@ -27,7 +27,7 @@
           {% for item in MENUITEMS %}
             <li><a href="/{{ item[1] }}">{{ item[0] }}</a></li>
           {% endfor %}
-          {% for page in PAGES %}
+          {% for page in pages %}
             <li><a href="/{{ page.url }}">{{ page.title }}</a></li>
           {% endfor %}
           {% for link in LINKS %}
