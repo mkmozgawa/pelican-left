@@ -5,7 +5,10 @@ body {
   color: #444;
   line-height: 30px;
   margin: 0.8em 1em;
-  max-width: 45em; }
+  display: flex;
+  max-width: 45em;
+  flex-direction: row;
+  align-content: stretch; }
 
 
 h1, h2, h3, h4 {
