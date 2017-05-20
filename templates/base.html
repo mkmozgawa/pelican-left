@@ -38,16 +38,15 @@
     {% endif %}
 
   </aside>
+  <main>
+      {% block content %}
+        <section class="column-right"> </section>
+      {% endblock %}
 
-  {% block content %}
-    <section class="column-right"> </section>
-  {% endblock %}
-
-  <footer class="column-right light">
-    <nav><a href="/">Home</a> - <a href="/archives.html">Archives</a> - <a href="/categories.html">Categories</a> - <a href="/tags.html">Tags</a> - <a href="/rss.xml">RSS</a> | {{SITENAME}} (© 2017)</nav>
-    <p></p>
-  </footer>
-
+      <footer class="column-right light">
+        <nav><a href="/">Home</a> - <a href="/archives.html">Archives</a> - <a href="/categories.html">Categories</a> - <a href="/tags.html">Tags</a> - <a href="/rss.xml">RSS</a> | {{SITENAME}} (© 2017)</nav>
+      </footer>
+  </main>
   {% include 'analytics.html' %}
   {% include 'piwik.html' %}
   {% include 'disqus_script.html' %}
