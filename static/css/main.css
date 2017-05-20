@@ -96,20 +96,17 @@ dd {
 /* aside */
 .sidebar {
   min-width: 5em;
+  margin-bottom: 2em;
   margin-right: 2em; }
 
 .sidebar a {
   border: none; }
 
-.sidebar nav {
-  margin: 15px 0 0 0; }
-
 .sidebar nav a {
   padding: 3px 0;
   color: black;
   font-weight: bold;
-  font-size: 12px;
-  display: block; }
+  font-size: 12px; }
 
 .sidebar nav a:hover {
   color: #227ce8; }
@@ -120,7 +117,7 @@ dd {
 
 .sidebar nav li {
   line-height: 18px;
-  padding: 0;
+  padding: 0.1em 0;
   list-style: none; }
 
 .article-list p {
