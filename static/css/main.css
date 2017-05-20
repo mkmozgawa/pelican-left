@@ -95,7 +95,8 @@ dd {
 
 /* aside */
 .sidebar {
-  position: fixed; }
+  min-width: 5em;
+  margin-right: 2em; }
 
 .sidebar a {
   border: none; }
@@ -126,8 +127,6 @@ dd {
   margin: 0; }
 
 .column-right {
-  margin-left: 120px;
-  margin-right: 20px;
   margin-bottom: 50px; }
 
 /* code snippets */
