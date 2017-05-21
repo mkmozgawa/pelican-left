@@ -9,7 +9,7 @@ A lot of space was intentionally left blank with the sole purpose of filling it 
 annoying ads.
 
 
-[![Pelican Left](http://i.imgur.com/NT0iQ70.png)](http://hernantz.github.io "Live Demo")
+[![Pelican Left](http://i.imgur.com/RF4SD03.png)](http://hernantz.github.io "Live Demo")
 
 
 ## Customization
