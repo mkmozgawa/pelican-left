@@ -7,10 +7,10 @@
       <h1 class="main-title">{{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</h1>
       {% endblock %}
     </header>
-    {% if articles %}
+    {% if articles_paginator %}
       <section class="article-list">
         <dl>
-        {% for article in articles %}
+        {% for article in articles_page.object_list %}
           <dt>
               <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
               {% if not HIDE_DATE %}
@@ -21,6 +21,7 @@
         {% endfor %}
         </dl>
       </section><!-- /article-list -->
+      {% include 'pagination.html' %}
       {% else %}
           No posts found.
       {% endif %}
