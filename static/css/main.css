@@ -3,6 +3,7 @@
 /* general */
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   background: #fff;
   color: #000;
   line-height: 30px;
@@ -37,6 +38,10 @@ img {
   max-width: 100%;
   border: none; }
 
+small {
+  color: #666;
+}
+
 code {
   background: #E8E8E8;
   font-family: inherit;
@@ -61,9 +66,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none; }
-
 ul, ol {
   padding: 0; }
 
@@ -73,6 +75,38 @@ ul li, ol li {
 
 article ul, article ol {
   padding: 0em 0em 0em 1em; }
+
+article a {
+  border-bottom: 1px dashed #666;
+  display: inline-block;
+  line-height: 0.9;
+  position: relative;
+}
+
+article a:hover {
+  border-bottom: 0;
+}
+
+article a:hover:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  bottom: -1px;
+  margin: 0 auto;
+  left: 0;
+  background: #007500;
+  animation-name: underline-color;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes underline-color {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 pre {
   line-height: 1.3em;
@@ -109,8 +143,8 @@ th {
 
 .sidebar nav a {
   padding: 3px 0;
-  color: black;
-  font-size: 12px; 
+  color: #666;
+  font-size: 15px; 
 }
 
 .sidebar nav ul {
@@ -119,11 +153,25 @@ th {
 
 .sidebar nav li {
   line-height: 18px;
-  padding: 0.1em 0;
+  padding: 0.2em 0;
   list-style: none; }
 
 .article-list p {
   margin: 0; }
+
+.article-list dt {
+  padding: 0.75em 0 1em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.article-list dt:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.article-list a {
+  font-size: 22px;
+}
 
 .column-right {
   margin-bottom: 50px; }
@@ -153,7 +201,7 @@ h6:hover .headerlink {
 
 /* helpers */
 .light {
-  color: #b0b0b0;
+  color: #666;
   font-size: 0.8em;
   line-height: 1.4em; }
 
