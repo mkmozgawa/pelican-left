@@ -4,7 +4,10 @@
   <section class="column-right">
     <header>
       {% block header %}
-      <h1 class="main-title">{{ SITENAME }} {% if SITESUBTITLE %} <small>{{ SITESUBTITLE }}</small>{% endif %}</h1>
+      <h1 class="main-title">{{ SITENAME }}</h1>
+      {% if SITESUBTITLE %}
+      <small>{{ SITESUBTITLE }}</small>
+      {% endif %}
       {% endblock %}
     </header>
     {% if articles_paginator %}
@@ -17,7 +20,9 @@
               <i><time class="light" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></i>
               {% endif %}
           </dt>
+          {% if not HIDE_SUMMARY %}
           <dd>{{ article.summary }}</dd>
+          {% endif %}
         {% endfor %}
         </dl>
       </section><!-- /article-list -->
