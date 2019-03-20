@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 /* general */
 body {
-  font-family: Helvetica;
+  font-family: 'Raleway', sans-serif;
   background: #fff;
-  color: #444;
+  color: #000;
   line-height: 30px;
   margin: 0.8em 1em;
   display: flex;
@@ -55,14 +57,12 @@ p.caption {
   margin-top: 0; }
 
 a {
-  color: #227ce8;
-  text-decoration: none; }
+  color: inherit;
+  text-decoration: none;
+}
 
 a:hover {
-  text-decoration: underline; }
-
-a:visited {
-  color: #60B; }
+  text-decoration: none; }
 
 ul, ol {
   padding: 0; }
@@ -92,10 +92,9 @@ th {
 /* site header */
 .main-title {
   margin-top: 0;
-  color: goldenrod; }
+  color: inherit; }
 
 .main-title small {
-  font-style: italic;
   color: #444;
   font-size: 14px; }
 
@@ -111,11 +110,8 @@ th {
 .sidebar nav a {
   padding: 3px 0;
   color: black;
-  font-weight: bold;
-  font-size: 12px; }
-
-.sidebar nav a:hover {
-  color: #227ce8; }
+  font-size: 12px; 
+}
 
 .sidebar nav ul {
   margin: 0;
